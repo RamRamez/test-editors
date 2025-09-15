@@ -1,0 +1,43 @@
+{
+  "name": "test-editors",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@editorjs/editorjs": "^2.31.0",
+    "@editorjs/header": "^2.8.8",
+    "@editorjs/image": "^2.10.3",
+    "@editorjs/list": "^2.0.8",
+    "@editorjs/paragraph": "^2.11.7",
+    "@lexical/code": "^0.35.0",
+    "@lexical/history": "^0.35.0",
+    "@lexical/link": "^0.35.0",
+    "@lexical/list": "^0.35.0",
+    "@lexical/markdown": "^0.35.0",
+    "@lexical/plain-text": "^0.35.0",
+    "@lexical/react": "^0.35.0",
+    "@lexical/rich-text": "^0.35.0",
+    "@lexical/selection": "^0.35.0",
+    "@lexical/utils": "^0.35.0",
+    "lexical": "^0.35.0",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
