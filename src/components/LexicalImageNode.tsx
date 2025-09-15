@@ -2,6 +2,7 @@
 
 import type { EditorConfig, NodeKey, SerializedLexicalNode, Spread } from "lexical";
 import { DecoratorNode } from "lexical";
+import type { ReactElement } from "react";
 
 type SerializedImageNode = Spread<
     {
@@ -15,7 +16,7 @@ type SerializedImageNode = Spread<
     SerializedLexicalNode
 >;
 
-export class ImageNode extends DecoratorNode<JSX.Element> {
+export class ImageNode extends DecoratorNode<ReactElement> {
     __src: string;
     __alt?: string;
     __width?: number;
@@ -62,7 +63,7 @@ export class ImageNode extends DecoratorNode<JSX.Element> {
         return new ImageNode(src, alt, width, height);
     }
 
-    decorate(_editor: unknown, _config: EditorConfig): JSX.Element {
+    decorate(_editor: unknown, _config: EditorConfig): ReactElement {
         const width = this.__width ?? 400;
         const height = this.__height ?? 300;
         return (
